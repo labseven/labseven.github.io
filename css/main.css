@@ -17,11 +17,15 @@ nav ul li a, footer ul li a {
   color: #888;
 }
 a {
+    color: #519eab;
     text-decoration: none;
-    color: ##3b8882;
 }
 a:hover {
     text-decoration: underline;
+}
+.posts .title a:visited {
+  color: #3a736f;
+  text-decoration: underline;
 }
 h1 {
     font-size: 3em;
