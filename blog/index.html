@@ -3,9 +3,9 @@ layout: default
 title: Blog
 ---
 <h1>{{ page.title }}</h1>
-<ul class="posts">
+<table class="posts">
 
 {% for post in site.posts %}
-<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+<tr><th class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></th> <th class="date">{{ post.date | date_to_string }}</th>
 {% endfor %}
-</ul>
+</table>
