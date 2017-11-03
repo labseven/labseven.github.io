@@ -10,4 +10,4 @@ I started with spot welding wire sculptures. These were mostly explorations in g
 
 > One of the flowers that I had made
 
-Not only was making art interesting, the welding skills went into practice when I fabricated a part of our [Design Nature Play Experience]({{ site.url }}/blog/20170125/Play-Experience).
+Not only was making art interesting, my welding skills were useful when I fabricated a mechanism for our [Design Nature Play Experience]({{ site.url }}/blog/20170125/Play-Experience).
