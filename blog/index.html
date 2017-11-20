@@ -6,6 +6,18 @@ title: Blog
 <table class="posts">
 
 {% for post in site.posts %}
-<tr><th class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></th> <th class="date">{{ post.date | date_to_string }}</th>
+<tr>
+  <th class="title">
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+
+      {% if post.prev-image %}
+      <br>
+      <img class="prev-image" src="/assets/{{ post.prev-image }}">
+      {% endif %}
+    </a>
+  </th>
+  <th class="date">{{ post.date | date_to_string }}</th>
+</tr>
 {% endfor %}
 </table>
