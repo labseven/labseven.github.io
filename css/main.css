@@ -111,7 +111,7 @@ ul.posts li {
   border-radius: 2%;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 1000px) {
   .posts article {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
