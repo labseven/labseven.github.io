@@ -118,6 +118,10 @@ ul.posts li {
   border-radius: 2%;
 }
 
+.posts article img {
+  border-radius: 2%;
+}
+
 @media screen and (max-width: 1000px) {
   .posts article {
     -moz-flex-grow: 0;
