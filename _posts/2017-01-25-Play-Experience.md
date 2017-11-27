@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Design Nature: Play Experience"
+date: 2017-01-25
+---
 For the second project in Design Nature, we teamed up to build a play experience for fourth graders inspired by an animal. Our team chose to study, and be inspired by, spiders. We found that there were many interesting traits and movements that spiders do, like web spinning, trapping, rolling, and climbing. For me, the most important takeback from the project was learning tools to make design decisions as a team, with input from every member, and strengthening the importance of rapid iteration while creating a product.
 
 ![Harsh Grading]({{ site.url }}/assets/desnat_grading.jpg "Our final project being reviewed")

@@ -3,7 +3,6 @@ layout: post
 title: "ModSim FEA"
 date: 2017-01-21
 ---
-
 For a thermodynamics project in Modeling and Simulation, Adam Selker and I wrote a Finite Element Analysis program, to simulate the thermal flow in a heat sink with air passing by it. An FEA models the world by cutting up the world into many tiny cells and computes simple interactions between cells near each other, allowing for realistic simulation. We wrote ours in C++ to learn about the language and for speed. It is capable of simulating 200,000 time steps (40 seconds at .0002 seconds per step) of a 50mm x 50mm x 10mm space in 6 minutes. The configuration allows us to easily define new materials, including fluids moving in a laminar flow, and arbitrarily shaped objects. We presented our findings about the optimal heat sink design in a formal presentation to a professor and students. The presentation can be found [here](https://goo.gl/PJpgE8 "FEA Presentation").
 
 ![Pair Programming]({{ site.url }}/assets/adamadam.jpg "Pair Programming")

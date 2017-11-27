@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Aquaponics"
+date: 2017-01-21
+---
 I am a team lead for the electrical and lights subteam on the Aquaponics build team. Aquaponics is a system for growing plants without soil (hydroponics) in a symbiotic environment with aquatic animals. [Read more about it on Wikipedia.](https://en.wikipedia.org/wiki/Aquaponics)
 
 We are building one in a library shelf, to grow basil and other herbs with fish feeding into the system. The goal is to have a highly automated system with minimal human intervention between planting and harvest.
