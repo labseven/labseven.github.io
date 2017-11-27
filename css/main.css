@@ -53,12 +53,19 @@ table.posts .title {
   text-align: left;
   padding-right: 20px;
   padding-top: 3px;
+  width: 80%;
 }
 
 table.posts .date {
   font-size: 1em;
   text-align: left;
 }
+
+.posts .prev-image {
+  height: 5em;
+  marigin: auto;
+}
+
 
 ul.posts li {
     list-style: none;
