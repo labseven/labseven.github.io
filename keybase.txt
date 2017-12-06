@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/adamnovotny
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.labseven.space
+  * I am adamnovotny (https://keybase.io/adamnovotny) on keybase.
+  * I have a public key ASBOzdTUYH9wvHdQYOdQiOdluoOwoY5GnNs-_TTv-LP8Bwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204ecdd4d4607f70bc775060e75088e765ba83b0a18e469cdb3efd34eff8b3fc070a",
+      "host": "keybase.io",
+      "kid": "01204ecdd4d4607f70bc775060e75088e765ba83b0a18e469cdb3efd34eff8b3fc070a",
+      "uid": "c19ff1f7ff14956fcfd9d519c5d6aa19",
+      "username": "adamnovotny"
+    },
+    "merkle_root": {
+      "ctime": 1512523804,
+      "hash": "e11de67272980f57a63d0f037acd7c8f50d991526d3c9dd267b4e162e7711fe4198c0300ed836cb28dace39796e0b59f80e2bb5d784cfb9318c3fd66e24e75d7",
+      "hash_meta": "afa07c7f86d11f919cd33593abd1733899221126903a5b8721c1d05ccb55de64",
+      "seqno": 1782730
+    },
+    "service": {
+      "hostname": "www.labseven.space",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1512523832,
+  "expire_in": 504576000,
+  "prev": "8730a0be6bf269f96a469ff88d22197b4226301ae6c453ae47559ae13f443c48",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTs3U1GB/cLx3UGDnUIjnZbqDsKGORpzbPv007/iz/AcKp3BheWxvYWTFA0x7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNGVjZGQ0ZDQ2MDdmNzBiYzc3NTA2MGU3NTA4OGU3NjViYTgzYjBhMThlNDY5Y2RiM2VmZDM0ZWZmOGIzZmMwNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGVjZGQ0ZDQ2MDdmNzBiYzc3NTA2MGU3NTA4OGU3NjViYTgzYjBhMThlNDY5Y2RiM2VmZDM0ZWZmOGIzZmMwNzBhIiwidWlkIjoiYzE5ZmYxZjdmZjE0OTU2ZmNmZDlkNTE5YzVkNmFhMTkiLCJ1c2VybmFtZSI6ImFkYW1ub3ZvdG55In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTEyNTIzODA0LCJoYXNoIjoiZTExZGU2NzI3Mjk4MGY1N2E2M2QwZjAzN2FjZDdjOGY1MGQ5OTE1MjZkM2M5ZGQyNjdiNGUxNjJlNzcxMWZlNDE5OGMwMzAwZWQ4MzZjYjI4ZGFjZTM5Nzk2ZTBiNTlmODBlMmJiNWQ3ODRjZmI5MzE4YzNmZDY2ZTI0ZTc1ZDciLCJoYXNoX21ldGEiOiJhZmEwN2M3Zjg2ZDExZjkxOWNkMzM1OTNhYmQxNzMzODk5MjIxMTI2OTAzYTViODcyMWMxZDA1Y2NiNTVkZTY0Iiwic2Vxbm8iOjE3ODI3MzB9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoid3d3LmxhYnNldmVuLnNwYWNlIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zNiJ9LCJjdGltZSI6MTUxMjUyMzgzMiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiI4NzMwYTBiZTZiZjI2OWY5NmE0NjlmZjg4ZDIyMTk3YjQyMjYzMDFhZTZjNDUzYWU0NzU1OWFlMTNmNDQzYzQ4Iiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA/g8Vm2gf64Yqv27tHxTT5bhNWJfoTU3jqFdQYSpPLlLlo8wR7/t9rg2teqDsVQ6nLlUia6yqXtIAHwhXsGiLDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGdmZ/LBT/E3QtYcWoppSkqpR1G02u+m7RD7jl12BcqJo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adamnovotny
+
+==================================================================
