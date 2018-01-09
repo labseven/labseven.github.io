@@ -41,6 +41,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+	background: white;
 }
 
 table.posts {
@@ -145,4 +146,11 @@ ul.posts li {
 .posts article img {
   display: block;
   width: 100%;
+}
+
+#pdf {
+    position: relative;
+    height: -moz-calc(100%);
+    height: -webkit-calc(100%);
+	height: calc(90%);
 }
