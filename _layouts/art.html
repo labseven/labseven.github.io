@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<div class="jsArtContainer">
+    <canvas id="{{ page.jsart }}" class="jsArtCanvas"></canvas>
+</div>
+<script>
+  canvas = document.getElementById("{{ page.jsart }}");
+  canvas.height = canvas.width;
+</script>
+
+<script type="text/paperscript" canvas="{{ page.jsart }}">
+{% include pd/lib.js %}
+{% include pd/{{ page.jsart}}.js %}
+</script>

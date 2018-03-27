@@ -1,0 +1,32 @@
+---
+layout: default
+title: Art
+---
+<link rel="stylesheet" type="text/css" href="/css/jsArt.css">
+<script type="text/javascript" src="/assets/paper-full.min.js"></script>
+
+<h1>{{ page.title }}</h1>
+
+Below you will find some programatic art. Currently (March 2018) I will be posting a new piece every day.
+In this view, things might be broken (especially mouse events) because variable scoping doesn't exist in js :P
+I'm trying to do my best to name variables differently, but some num_rect might slip through, so click on the title to see each in its full glory.
+
+{% for pd in site.art %}
+<div>
+    <a href="{{ pd.url }}" title="{{ pd.date }}">
+      {{ pd.date }}
+    </a>
+    <br>
+  <div class="jspd">
+    <canvas id="{{ pd.jsart }}" class="jsArt" resize></canvas>
+    <script>
+      canvas = document.getElementById("{{ pd.jsart }}");
+      canvas.height = canvas.width;
+    </script>
+    <script type="text/paperscript" canvas="{{ pd.jsart }}">
+    {% include pd/lib.js %}
+    {% include pd/{{ pd.jsart}}.js %}
+    </script>
+  </div>
+</div>
+{% endfor %}
