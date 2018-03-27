@@ -26,5 +26,23 @@ function moveTo(path, point) {
   path.translate(point - path.center)
 }
 
+function spiral(old_obj, s){
+  s.num = (typeof s.num !== 'undefined') ?  s.num : 1000;
+  s.angle = (typeof s.angle !== 'undefined') ?  s.angle : 20;
+  s.center = (typeof s.center !== 'undefined') ?  s.center : c.center_pt;
+
+  for (i = 0; i < s.num; i++){
+    new_obj = old_obj.clone();
+    new_obj.rotate(s.angle, s.center);
+    new_obj.scale(s.scale);
+    new_obj.translate(move_towards_point(new_obj.position, s.center, s.translate));
+    new_obj.fillColor.alpha *= s.gradient;
+    old_obj = new_obj
+  }
+}
+
+function move_towards_point(start_point, end_point, percent){
+  return (end_point - start_point)*percent
+}
 
 console.log(c);
