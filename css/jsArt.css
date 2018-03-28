@@ -10,11 +10,15 @@
   font-size: 2em;
   /*color: black;*/
 }
-.nav a{
+.nav a {
   color: #333;
 }
 
-.nav a:hover{
+.nav a:hover {
   text-decoration: none;
   font-weight: bold;
+}
+
+.subtext {
+  font-size: 1em;
 }
