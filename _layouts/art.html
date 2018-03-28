@@ -13,7 +13,7 @@ layout: default
   {% if page.previous %}
   <a href="{{ page.previous.url }}">→</a>
   {% else %}
-  {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+  {% assign last lastPostIndex = site.art | size | minus: 1 %}
   <a href="{{ site.art[lastPostIndex].url }}">↺</a>
   {% endif %}
 </div>
@@ -23,10 +23,12 @@ layout: default
 </div>
 <script>
   canvas = document.getElementById("{{ page.jsart }}");
-  canvas.height = canvas.width;
+  canvas.height = Math.min(window.innerHeight, window.innerWidth*.7)*.8;
+  canvas.width = canvas.height;
 </script>
 
 <script type="text/paperscript" canvas="{{ page.jsart }}">
 {% include pd/lib.js %}
 {% include pd/{{ page.jsart}}.js %}
+paper.view.draw();
 </script>
