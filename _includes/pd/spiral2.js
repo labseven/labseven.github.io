@@ -30,31 +30,32 @@ sp_background = {
 new Path.Rectangle(sp_background);
 spiral(new Path.Circle(sp_rect_settings), sp_settings);
 
-function onMouseMove(event) {
-  if (mouse_inside){
+if (interactive) {
+  view.onMouseMove = function (event) {
+    if (mouse_inside){
+      project.clear();
+      new Path.Rectangle(sp_background);
+      sp_settings.scale = ((event.point.x / r_size()) * .08) + .92;
+      sp_settings.translate = ((event.point.y / r_size()) * .05)-0.005;
+      // sp_settings.cur_angle += 1;
+      sp_circle = new Path.Circle(sp_rect_settings).rotate(sp_settings.cur_angle, c.center);
+      spiral(sp_circle, sp_settings);
+    }
+  }
+
+  view.onFrame = function (event) {
     project.clear();
     new Path.Rectangle(sp_background);
-    sp_settings.scale = ((event.point.x / r_size()) * .08) + .92;
-    sp_settings.translate = ((event.point.y / r_size()) * .05)-0.005;
-    // sp_settings.cur_angle += 1;
+    sp_settings.cur_angle += 1;
     sp_circle = new Path.Circle(sp_rect_settings).rotate(sp_settings.cur_angle, c.center);
     spiral(sp_circle, sp_settings);
   }
-}
 
-function onFrame(event) {
-  project.clear();
-  new Path.Rectangle(sp_background);
-  sp_settings.cur_angle += 1;
-  sp_circle = new Path.Circle(sp_rect_settings).rotate(sp_settings.cur_angle, c.center);
-  spiral(sp_circle, sp_settings);
-}
+  view.onMouseLeave = function (event) {
+    mouse_inside = false;
+  }
 
-view.onMouseLeave = function (event) {
-  mouse_inside = false;
-
-}
-
-view.onMouseEnter = function (event) {
-  mouse_inside = true;
+  view.onMouseEnter = function (event) {
+    mouse_inside = true;
+  }
 }

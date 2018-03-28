@@ -21,22 +21,23 @@ for (x = 0; x < num_rect; x++){
 //     rotate_to(rectangles[i], [event.point.x, event.point.y]);
 //   }
 // }
-
-function onMouseMove(event) {
-  if (mouse_inside){
-    for (i = 0; i < line_grid_rectangles.length; i++){
-      rotate_to(line_grid_rectangles[i], [event.point.x, event.point.y]);
+if (interactive) {
+  view.onMouseMove = function (event) {
+    if (mouse_inside){
+      for (i = 0; i < line_grid_rectangles.length; i++){
+        rotate_to(line_grid_rectangles[i], [event.point.x, event.point.y]);
+      }
     }
   }
-}
 
-view.onMouseLeave = function (event) {
-  mouse_inside = false;
-  for (i = 0; i < line_grid_rectangles.length; i++){
-    rotate_to(line_grid_rectangles[i], c.center);
+  view.onMouseLeave = function (event) {
+    mouse_inside = false;
+    for (i = 0; i < line_grid_rectangles.length; i++){
+      rotate_to(line_grid_rectangles[i], c.center);
+    }
   }
-}
 
-view.onMouseEnter = function (event) {
-  mouse_inside = true;
+  view.onMouseEnter = function (event) {
+    mouse_inside = true;
+  }
 }

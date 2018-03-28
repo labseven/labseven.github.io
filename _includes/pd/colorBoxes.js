@@ -34,21 +34,23 @@ function moveRectangleRow(end_point, rect_hue) {
 
 moveRectangleRow(canvas_center, hue);
 
-view.onMouseMove = function (event) {
-  if(mouse_inside){ moveRectangleRow(event.point, hue); }
-};
+if (interactive) {
+  view.onMouseMove = function (event) {
+    if(mouse_inside){ moveRectangleRow(event.point, hue); }
+  };
 
-view.onMouseDown = function (event) {
-  hue = Math.random()*360;
-  moveRectangleRow(event.point, hue);
-};
+  view.onMouseDown = function (event) {
+    hue = Math.random()*360;
+    moveRectangleRow(event.point, hue);
+  };
 
-view.onMouseLeave = function (event) {
-  mouse_inside = false;
-  moveRectangleRow(canvas_center, hue);
-}
+  view.onMouseLeave = function (event) {
+    mouse_inside = false;
+    moveRectangleRow(canvas_center, hue);
+  }
 
-view.onMouseEnter = function (event) {
-  console.log("mouseEntercolor");
-  mouse_inside = true;
+  view.onMouseEnter = function (event) {
+    console.log("mouseEntercolor");
+    mouse_inside = true;
+  }
 }

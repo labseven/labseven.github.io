@@ -29,6 +29,7 @@ layout: default
 
 <script type="text/paperscript" canvas="{{ page.jsart }}">
 {% include pd/lib.js %}
+interactive = true;
 {% include pd/{{ page.jsart}}.js %}
 paper.view.draw();
 </script>

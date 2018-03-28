@@ -46,4 +46,4 @@ function move_towards_point(start_point, end_point, percent){
   return (end_point - start_point)*percent
 }
 
-console.log(c);
+interactive = false;
