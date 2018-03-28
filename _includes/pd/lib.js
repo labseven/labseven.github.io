@@ -37,7 +37,7 @@ function spiral(old_obj, s){
     new_obj.rotate(s.angle, s.center);
     new_obj.scale(s.scale);
     new_obj.translate(move_towards_point(new_obj.position, s.center, s.translate));
-    new_obj.fillColor.alpha *= s.gradient;
+    new_obj.fillColor.opacity *= s.gradient;
     old_obj = new_obj
   }
 }
