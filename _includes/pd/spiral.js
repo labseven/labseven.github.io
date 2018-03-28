@@ -5,7 +5,7 @@ sp_settings = {
     angle: 20
 }
 
-sp_rect = new Path.Rectangle({
+sp_rect_settings = {
   // fillColor: 'black',
   fillColor: {
     gradient: {
@@ -17,6 +17,25 @@ sp_rect = new Path.Rectangle({
   center: [r_size(20),r_size(30)],
   size: [r_size(15),r_size(40)],
   rotation: -15
-});
+}
 
-spiral(sp_rect, sp_settings);
+spiral(new Path.Rectangle(sp_rect_settings), sp_settings);
+
+function onMouseMove(event) {
+  // console.log(event);
+  if (mouse_inside){
+    project.clear();
+    sp_settings.scale = ((event.point.x / r_size()) * .25) + .75;
+    sp_settings.translate = ((event.point.y / r_size()) * .05);
+    spiral(new Path.Rectangle(sp_rect_settings), sp_settings);
+  }
+}
+
+view.onMouseLeave = function (event) {
+  mouse_inside = false;
+
+}
+
+view.onMouseEnter = function (event) {
+  mouse_inside = true;
+}

@@ -6,6 +6,7 @@ c = {
 }
 
 function r_size (size) {
+  if (typeof size === "undefined") { return view.viewSize.width; }
   return size / 100 * view.viewSize.width
 }
 
