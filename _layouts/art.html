@@ -2,6 +2,22 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+
+<div class="nav">
+  {% if page.next %}
+  <a href="{{ page.next.url }}">←</a>
+  {% else %}
+  <a href="{{ site.art[0].url }}">↻</a>
+  {% endif %}
+  <a href="/art">⇑</a>
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}">→</a>
+  {% else %}
+  {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+  <a href="{{ site.art[lastPostIndex].url }}">↺</a>
+  {% endif %}
+</div>
+
 <div class="jsArtContainer">
     <canvas id="{{ page.jsart }}" class="jsArtCanvas"></canvas>
 </div>

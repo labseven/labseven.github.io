@@ -3,3 +3,13 @@
   /*position: absolute;*/
   box-shadow: 0 10px 20px;
 }
+
+.nav {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 2em;
+  /*color: black;*/
+}
+.nav a{
+  color: #333;
+}
