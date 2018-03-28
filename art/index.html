@@ -15,9 +15,9 @@ I'm trying to do my best to use unique variable names, but something might slip 
 </p>
 </p>
 
-{% for pd in site.art %}
+{% for pd in site.art reversed %}
 <div style="padding: 2%">
-    <a href="{{ pd.url }}" title="{{ pd.date }}">
+    <a href="{{ pd.url }}" title="{{ pd.date }}" class="title">
       {{ pd.title }}
     </a>
     <br>
