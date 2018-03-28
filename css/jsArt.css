@@ -1,14 +1,18 @@
 .jsArtCanvas {
-  width: 100%;
-  /*position: absolute;*/
-  box-shadow: 0 10px 20px;
+  /*width: 100%;*/
+  max-width: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
+
+  display: block;
+  box-shadow: 0 2vh 3vh;
 }
 
 .nav {
   text-align: center;
   padding-bottom: 5%;
   font-size: 2em;
-  /*color: black;*/
 }
 .nav a {
   color: #333;
@@ -21,4 +25,10 @@
 
 .subtext {
   font-size: 1em;
+}
+
+.title {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
 }
