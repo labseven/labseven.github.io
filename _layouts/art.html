@@ -26,7 +26,11 @@ layout: default
   canvas.height = Math.min(window.innerHeight, window.innerWidth*.7)*.8;
   canvas.width = canvas.height;
 </script>
-
+{% for include_file in page.includes %}
+<script>
+  {% include pd/{{include_file}}.js %}
+</script>
+{% endfor %}
 <script type="text/paperscript" canvas="{{ page.jsart }}">
 {% include pd/lib.js %}
 interactive = true;

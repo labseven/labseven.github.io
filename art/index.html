@@ -27,6 +27,13 @@ I'm trying to do my best to use unique variable names, but something might slip 
       canvas = document.getElementById("{{ pd.jsart }}");
       canvas.height = canvas.width;
     </script>
+
+    {% for include_file in pd.includes %}
+    <script>
+      {% include pd/{{include_file}}.js %}
+    </script>
+    {% endfor %}
+
     <script type="text/paperscript" canvas="{{ pd.jsart }}">
     {% include pd/lib.js %}
     {% include pd/{{ pd.jsart}}.js %}
