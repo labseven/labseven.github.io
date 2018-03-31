@@ -1,6 +1,9 @@
 noise.seed(Math.random());
 
 var ns_hue = Math.random() * 360;
+var ns_xScale = 0.02;
+var ns_yScale = 0.05;
+
 var t = 0;
 
 background('black');
@@ -13,6 +16,28 @@ if(interactive){
     drawMountains(t);
     t++;
   }
+  view.onClick = function () {
+    ns_hue = Math.random() * 360;
+  }
+
+  view.onMouseMove = function (ev) {
+    if(mouse_inside){
+      ns_xScale = mouse_loc(ev).x * 0.05;
+      ns_yScale = mouse_loc(ev).y * 0.10;
+
+      console.log(ns_xScale, ns_yScale);
+    }
+  }
+
+  view.onMouseLeave = function (event) {
+    mouse_inside = false;
+    ns_xScale = 0.02;
+    ns_yScale = 0.05;
+  }
+
+  view.onMouseEnter = function (event) {
+    mouse_inside = true;
+  }
 }
 
 function drawMountains (t) {
@@ -20,7 +45,7 @@ function drawMountains (t) {
   for (y = 0; y < 5; y++){
     ns_paths.push(new Path());
     for (x = -1; x < c.width+1; x++){
-      ns_paths[y].add(new Point(x, noise.perlin2(x/50, -10+y/20 + t/400)*c.height/2 + c.height*y/20 + c.height/2));
+      ns_paths[y].add(new Point(x, noise.perlin2(x * ns_xScale, y * ns_yScale + t/400)*c.height/2 + c.height*y/20 + c.height/2));
     }
     ns_paths[y].add(new Point(c.width, c.height + 1));
     ns_paths[y].add(new Point(-1, c.height + 1));

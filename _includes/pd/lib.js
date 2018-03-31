@@ -54,4 +54,8 @@ function background(color) {
   });
 }
 
+function mouse_loc(event) {
+  return new Point(event.point.x / r_size(), event.point.y / r_size());
+}
+
 interactive = false;
