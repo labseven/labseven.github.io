@@ -41,8 +41,8 @@ if (interactive) {
     draw_circle();
   };
 
-  view.onFrame = function () {
-    if (randomize) {
+  view.onFrame = function (ev) {
+    if (randomize && ev.count % 3 === 0) {
       project.clear();
       draw_circle();
     }
