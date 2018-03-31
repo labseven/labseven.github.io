@@ -7,6 +7,8 @@
 
   display: block;
   box-shadow: 0 2vh 3vh;
+
+  cursor: none;
 }
 
 .nav {
