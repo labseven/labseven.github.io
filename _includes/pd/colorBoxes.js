@@ -50,7 +50,6 @@ if (interactive) {
   }
 
   view.onMouseEnter = function (event) {
-    console.log("mouseEntercolor");
     mouse_inside = true;
   }
 }
