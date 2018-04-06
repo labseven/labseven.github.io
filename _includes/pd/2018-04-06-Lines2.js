@@ -14,6 +14,7 @@ settings = {
   }
 }
 
+render_bg = false;
 
 background = {
   from: [0,0],
@@ -23,14 +24,17 @@ background = {
 
 new Path.Rectangle(background);
 
-function drawLines() {
+function drawLines(render_bg) {
   rectangles = [];
 
-  // rectangles.push(new Path.Rectangle({
-  //   fillColor: '666',
-  //   point: [0, c.height/2],
-  //   size: [c.width, c.height/2]
-  // }));
+  if (render_bg){
+    rectangles.push(new Path.Rectangle({
+      fillColor: '666',
+      point: [0, c.height/2],
+      size: [c.width, c.height/2]
+    }));
+  }
+
   for (x=0; x < settings.num_rect; x++){
     rectangles.push(new Path.Rectangle({
       fillColor: 'white',
@@ -42,7 +46,7 @@ function drawLines() {
   return new Group(rectangles)
 }
 
-lines = drawLines()
+lines = drawLines(render_bg)
 spiral(lines, settings.spiral);
 
 if (interactive) {
@@ -53,7 +57,7 @@ if (interactive) {
       settings.spiral.scale = ((event.point.x / r_size()) * .1) + .9;
       settings.spiral.translate = ((event.point.y / r_size()) * .1)-0.01;
 
-      spiral(drawLines(), settings.spiral);
+      spiral(drawLines(render_bg), settings.spiral);
     }
   }
 
@@ -69,10 +73,18 @@ if (interactive) {
     project.clear();
     new Path.Rectangle(background);
 
-    spiral(drawLines(), settings.spiral);
+    spiral(drawLines(render_bg), settings.spiral);
   }
 
   view.onMouseEnter = function (event) {
     mouse_inside = true;
+  }
+
+  view.onClick = function (event) {
+    render_bg = !render_bg;
+
+    project.clear();
+    new Path.Rectangle(background);
+    spiral(drawLines(render_bg), settings.spiral);
   }
 }
