@@ -1,0 +1,26 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Adam Novotny Programmatic Art Things</title>
+	<link href="http://www.labseven.space/art/atom.xml" rel="self"/>
+	<link href="http://www.labseven.space/art"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://labseven.space/art</id>
+	<author>
+		<name>Adam Novotny</name>
+		<email>adam.novotny55@gmail.com</email>
+	</author>
+
+	{% for pd in site.art %}
+		<entry>
+			<title>{{ pd.title }}</title>
+			<link href="http://www.labseven.space{{ pd.url }}"/>
+			<updated>{{ pd.date | date_to_xmlschema }}</updated>
+			<id>http://labseven.space{{ pd.id }}</id>
+		</entry>
+	{% endfor %}
+
+</feed>
