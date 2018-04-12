@@ -6,6 +6,12 @@ collections:
     art:
       output: true
       permalink: /:collection/:year:month:day/:title
+
+    references:
+        output: true
+        permalink: /:collection/:year:month:day/:title
+
+
 #
 # defaults:
 #   - scope:
