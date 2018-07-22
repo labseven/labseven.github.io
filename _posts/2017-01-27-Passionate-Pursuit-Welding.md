@@ -2,6 +2,7 @@
 layout: post
 title: "Passionate Pursuit: Welding"
 date: 2017-01-27
+published: false
 ---
 During Fall semester of 2017, I wanted to explore art and design, and also learn to weld. I combined the two in a Passionate Pursuit in Metal Sculpture. At Olin, every semester students can do a pursue a project or skill that interests them through a Passionate Pursuit. Through these, students can get some funding and a faculty mentor for support.
 
