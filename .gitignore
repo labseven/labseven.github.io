@@ -1,2 +1,4 @@
 _site/
 .jekyll*
+
+.DS_Store
