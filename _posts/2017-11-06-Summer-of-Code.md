@@ -17,4 +17,4 @@ The biggest project I worked on was FutureBoard, our take on digital signage. We
 
 We also ran a few short hackathons, most of which I focused on creating wireless input devices with an ESP8266. The most fun was creating a capacitive touch bar for FutureBoard. Most of this was done in Micropython with a NodeJS server.
 
-Ultimately, I learned a lot about working in a small team and how to be most effective when developing new software.
+Ultimately, I learned a lot about working in a small team and how to be effective when developing new software.
