@@ -8,10 +8,9 @@ title: Art
 <h1>{{ page.title }}</h1>
 
 <p>
-Below you will find some programatic art. Currently (March 2018) I will be posting a new piece every day.
+Below you will find some programatic art.
 Read more about it <a href="/blog/20180101/Programmatic-Design">here</a>.
-<p class="subtext">Note: In this view, interactivity is disabled, and things might be broken because variable scoping doesn't exist in js :P
-I'm trying to do my best to use unique variable names, but something might slip through, so click on the title to see each in its full glory.
+<p class="subtext">Note: These are static images, click through to see it in full interactive glory.
 </p>
 </p>
 
@@ -19,26 +18,11 @@ I'm trying to do my best to use unique variable names, but something might slip 
 <div style="padding: 2%">
     <a href="{{ pd.url }}" title="{{ pd.date }}" class="title">
       {{ pd.title }}
+      <br>
+      {% if pd.preview %}
+      <img src="/assets/pd/{{ pd.preview }}" class="jsartprev"/>
+      {% endif %}
     </a>
-    <br>
-  <div class="jspd">
-    <canvas id="{{ pd.jsart }}" class="jsArt" resize></canvas>
-    <script>
-      canvas = document.getElementById("{{ pd.jsart }}");
-      canvas.height = canvas.width;
-    </script>
-
-    {% for include_file in pd.includes %}
-    <script>
-      {% include pd/{{include_file}}.js %}
-    </script>
-    {% endfor %}
-
-    <script type="text/paperscript" canvas="{{ pd.jsart }}">
-    {% include pd/lib.js %}
-    {% include pd/{{ pd.jsart}}.js %}
-    </script>
-  </div>
 </div>
 {% endfor %}
 
