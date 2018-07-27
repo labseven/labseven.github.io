@@ -3,8 +3,13 @@ layout: post
 title: "A Notifications App"
 date: 2018-04-12
 published: true
+prev-image: espresso.jpg
 ---
 One pain point that I've been having at college has been organizing informal events with people outside of my immediate friends. I like to make coffee and host morning coffee drinking in my lofted room, but I don't have a good way to inform people that it is happening. The standard way to organize events at school is through an email list, but nobody checks their email on a weekend morning.
+
+![Espresso]({{ site.url }}/assets/espresso.jpg)
+
+> One of my first shots
 
 So I decided to make a lightweight webapp that would send push notifications to people's phones on coffee mornings. With a single button press, they can subscribe to the reminders. It then sends automatic notifications about new and upcoming events.
 
